@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: olist
+    database: olist-ecommerce
+    schema: main
+    tables:
+      - name: olist_order_items
+      - name: olist_order_payments
+      - name: olist_products
+      - name: olist_orders
+      - name: olist_sellers
+      - name: olist_order_reviews
+      - name: olist_customers
+      - name: olist_geolocation
+
+

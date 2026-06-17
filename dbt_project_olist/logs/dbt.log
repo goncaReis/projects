@@ -1,0 +1,119 @@
+[0m14:51:17.003874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75100970acf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75100c472e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75100878fb10>]}
+
+
+============================== 14:51:17.010769 | 505bbb94-2a20-440d-9179-a6f516802727 ==============================
+[0m14:51:17.010769 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:51:17.011500 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'log_path': 'logs', 'static_parser': 'True', 'write_json': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'profiles_dir': '/home/goncalo/.dbt', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init app', 'no_print': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:51:17.027760 [debug] [MainThread]: Starter project path: /home/goncalo/miniconda3/lib/python3.13/site-packages/dbt/include/starter_project
+[0m14:51:17.038096 [info ] [MainThread]: 
+Your new dbt project "app" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:51:17.038760 [info ] [MainThread]: Setting up your profile.
+[0m14:51:17.039975 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m14:51:17.041769 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.123991854, "process_in_blocks": "0", "process_kernel_time": 0.576358, "process_mem_max_rss": "102212", "process_out_blocks": "64", "process_user_time": 1.893179}
+[0m14:51:17.042563 [debug] [MainThread]: Command `dbt init` failed at 14:51:17.042287 after 0.13 seconds
+[0m14:51:17.043307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7510087736f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751008668170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7510088168b0>]}
+[0m14:51:17.043846 [debug] [MainThread]: Flushing usage events
+[0m14:51:17.878631 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:57:26.425818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75fd0ac1acf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75fd0d626e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75fd098cbb10>]}
+
+
+============================== 23:57:26.429448 | edbe950f-373e-433c-a715-590bc419144f ==============================
+[0m23:57:26.429448 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:57:26.429825 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_format': 'default', 'debug': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'empty': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'profiles_dir': '/home/goncalo/.dbt', 'warn_error': 'None', 'invocation_command': 'dbt init dbt_project', 'quiet': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'log_path': 'logs', 'use_colors': 'True', 'no_print': 'None', 'partial_parse': 'True', 'static_parser': 'True'}
+[0m23:57:26.439693 [debug] [MainThread]: Starter project path: /home/goncalo/miniconda3/lib/python3.13/site-packages/dbt/include/starter_project
+[0m23:57:26.449196 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:57:26.449543 [info ] [MainThread]: Setting up your profile.
+[0m23:57:39.948223 [info ] [MainThread]: Profile dbt_project written to /home/goncalo/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m23:57:39.949210 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 14.046636, "process_in_blocks": "65840", "process_kernel_time": 0.252184, "process_mem_max_rss": "132072", "process_out_blocks": "80", "process_user_time": 0.878578}
+[0m23:57:39.949596 [debug] [MainThread]: Command `dbt init` succeeded at 23:57:39.949502 after 14.05 seconds
+[0m23:57:39.949916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75fd098c2b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75fd09fc0b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75fd09771ae0>]}
+[0m23:57:39.950247 [debug] [MainThread]: Flushing usage events
+[0m23:57:40.815211 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:04:28.735962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76beb09eacf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76beb377ee90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76beafa2fb10>]}
+
+
+============================== 17:04:28.742497 | 96131f8d-280d-4d50-a0c4-2bdcdce06f95 ==============================
+[0m17:04:28.742497 [info ] [MainThread]: Running with dbt=1.11.11
+[0m17:04:28.743310 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'use_colors': 'True', 'target_path': 'None', 'no_print': 'None', 'empty': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/home/goncalo/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'introspect': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'log_format': 'default', 'version_check': 'True', 'quiet': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True'}
+[0m17:04:28.767934 [info ] [MainThread]: dbt version: 1.11.11
+[0m17:04:28.768525 [info ] [MainThread]: python version: 3.13.13
+[0m17:04:28.769007 [info ] [MainThread]: python path: /home/goncalo/miniconda3/bin/python3.13
+[0m17:04:28.769384 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m17:04:29.042047 [info ] [MainThread]: Using profiles dir at /home/goncalo/.dbt
+[0m17:04:29.042562 [info ] [MainThread]: Using profiles.yml file at /home/goncalo/.dbt/profiles.yml
+[0m17:04:29.042903 [info ] [MainThread]: Using dbt_project.yml file at /home/goncalo/projects/etl_app/dbt_project.yml
+[0m17:04:29.050385 [info ] [MainThread]: adapter type: duckdb
+[0m17:04:29.051078 [info ] [MainThread]: adapter version: 1.10.1
+[0m17:04:29.051731 [info ] [MainThread]: Configuration:
+[0m17:04:29.052207 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:04:29.052694 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:04:29.053137 [info ] [MainThread]: Required dependencies:
+[0m17:04:29.053620 [debug] [MainThread]: Executing "git --help"
+[0m17:04:29.058488 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:04:29.059009 [debug] [MainThread]: STDERR: "b''"
+[0m17:04:29.059283 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:04:29.059669 [info ] [MainThread]: Connection:
+[0m17:04:29.060367 [info ] [MainThread]:   database: olist-ecommerce
+[0m17:04:29.060937 [info ] [MainThread]:   schema: dbt
+[0m17:04:29.061432 [info ] [MainThread]:   path: /home/goncalo/projects/etl_app/olist-ecommerce.duckdb
+[0m17:04:29.062042 [info ] [MainThread]:   config_options: None
+[0m17:04:29.062525 [info ] [MainThread]:   extensions: None
+[0m17:04:29.063059 [info ] [MainThread]:   settings: {}
+[0m17:04:29.063616 [info ] [MainThread]:   external_root: .
+[0m17:04:29.064103 [info ] [MainThread]:   use_credential_provider: None
+[0m17:04:29.064612 [info ] [MainThread]:   attach: None
+[0m17:04:29.065073 [info ] [MainThread]:   filesystems: None
+[0m17:04:29.065556 [info ] [MainThread]:   remote: None
+[0m17:04:29.066079 [info ] [MainThread]:   plugins: None
+[0m17:04:29.066544 [info ] [MainThread]:   disable_transactions: False
+[0m17:04:29.067245 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m17:04:29.163261 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m17:04:29.215143 [debug] [MainThread]: Using duckdb connection "debug"
+[0m17:04:29.215541 [debug] [MainThread]: On debug: select 1 as id
+[0m17:04:29.215780 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:04:29.245196 [debug] [MainThread]: SQL status: OK in 0.029 seconds
+[0m17:04:29.246304 [debug] [MainThread]: On debug: Close
+[0m17:04:29.246921 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:04:29.247274 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:04:29.247577 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/goncalo/projects/etl_app/dbt_project.yml> not found
+
+[0m17:04:29.249629 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.5771554, "process_in_blocks": "112928", "process_kernel_time": 0.460293, "process_mem_max_rss": "143164", "process_out_blocks": "24", "process_user_time": 1.727118}
+[0m17:04:29.250164 [debug] [MainThread]: Command `dbt debug` failed at 17:04:29.250048 after 0.58 seconds
+[0m17:04:29.250519 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:04:29.250983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76bea5ae56e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76beaf81a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76beafa9a470>]}
+[0m17:04:29.251358 [debug] [MainThread]: Flushing usage events
+[0m17:04:29.807980 [debug] [MainThread]: An error was encountered while trying to flush usage events
