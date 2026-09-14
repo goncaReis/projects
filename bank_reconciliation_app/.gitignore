@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+file/client_notes.csv
+file/.client_notes_*.csv
