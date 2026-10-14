@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: cdc_events
+      - name: current_rows
+      - name: batches

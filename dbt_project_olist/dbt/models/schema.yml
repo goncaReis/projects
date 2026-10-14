@@ -1,0 +1,177 @@
+version: 2
+models:
+  - name: customers_history
+    description: "Selective SCD2 with Type 1 corrections applied to all versions."
+    columns:
+      - name: version_id
+        data_tests: [unique, not_null]
+      - name: business_key
+        data_tests: [not_null]
+      - name: valid_from
+        data_tests: [not_null]
+  - name: products_history
+    description: "Selective SCD2 with Type 1 corrections applied to all versions."
+    columns:
+      - name: version_id
+        data_tests: [unique, not_null]
+      - name: business_key
+        data_tests: [not_null]
+      - name: valid_from
+        data_tests: [not_null]
+  - name: resellers_history
+    description: "Selective SCD2 with Type 1 corrections applied to all versions."
+    columns:
+      - name: version_id
+        data_tests: [unique, not_null]
+      - name: business_key
+        data_tests: [not_null]
+      - name: valid_from
+        data_tests: [not_null]
+  - name: customers_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: orders_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: order_items_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: order_payments_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: order_reviews_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: products_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: resellers_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: geolocation_current
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+  - name: int_order_context
+    description: "Grain: one current order; shared customer attribution and date roles."
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]
+  - name: dim_customers
+    columns:
+      - name: version_id
+        data_tests: [unique, not_null]
+  - name: dim_products
+    columns:
+      - name: version_id
+        data_tests: [unique, not_null]
+  - name: dim_sellers
+    columns:
+      - name: version_id
+        data_tests: [unique, not_null]
+  - name: dim_order_status
+    columns:
+      - name: order_status
+        data_tests: [unique, not_null]
+  - name: dim_payment_type
+    columns:
+      - name: payment_type
+        data_tests: [unique, not_null]
+  - name: fct_orders
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]
+      - name: customer_version_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: version_id
+      - name: order_status
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_order_status')
+                field: order_status
+  - name: fct_order_items
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+      - name: customer_version_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: version_id
+      - name: order_status
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_order_status')
+                field: order_status
+      - name: product_version_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: version_id
+      - name: seller_version_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_sellers')
+                field: version_id
+  - name: fct_payments
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+      - name: customer_version_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: version_id
+      - name: order_status
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_order_status')
+                field: order_status
+      - name: payment_type
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_payment_type')
+                field: payment_type
+  - name: fct_reviews
+    columns:
+      - name: business_key
+        data_tests: [unique, not_null]
+      - name: customer_version_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: version_id
+      - name: order_status
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_order_status')
+                field: order_status
+  - name: daily_sales
+    columns:
+      - name: order_date
+        data_tests: [unique, not_null]
+seeds:
+  - name: product_category_name_translation
+    columns:
+      - name: product_category_name
+        data_tests: [unique, not_null]

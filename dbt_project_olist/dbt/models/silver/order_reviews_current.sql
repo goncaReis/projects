@@ -1,0 +1,1 @@
+{{ current_state('order_reviews', {"review_id":"text","order_id":"text","review_score":"integer","review_comment_title":"text","review_comment_message":"text","review_creation_date":"timestamp","review_answer_timestamp":"timestamp"}) }}

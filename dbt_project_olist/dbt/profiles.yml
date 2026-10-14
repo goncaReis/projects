@@ -1,0 +1,12 @@
+olist:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: "{{ env_var('PGHOST', 'localhost') }}"
+      port: "{{ env_var('PGPORT', '5433') | int }}"
+      user: "{{ env_var('PGUSER', 'olist') }}"
+      password: "{{ env_var('PGPASSWORD', 'olist_local') }}"
+      dbname: "{{ env_var('PGDATABASE', 'olist') }}"
+      schema: silver
+      threads: 4

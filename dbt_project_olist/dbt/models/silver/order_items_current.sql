@@ -1,0 +1,1 @@
+{{ current_state('order_items', {"order_id":"text","order_item_id":"integer","product_id":"text","seller_id":"text","shipping_limit_date":"timestamp","price":"numeric(18,2)","freight_value":"numeric(18,2)"}, ['product_id', 'seller_id']) }}

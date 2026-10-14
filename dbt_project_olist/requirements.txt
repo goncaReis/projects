@@ -1,0 +1,6 @@
+dbt-core>=1.11,<1.12
+dbt-postgres>=1.10,<1.11
+psycopg2-binary>=2.9,<3
+duckdb>=1.4,<2
+pyarrow>=19,<24
+pytest>=8,<10
